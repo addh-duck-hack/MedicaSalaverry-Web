@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  medicasalaverry.com:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: medicasalaverry.com
+    restart: always
+    ports:
+      - 85:80
+    networks:
+      - npm
+      - medicasalaverry.com
+
+networks:
+  medicasalaverry.com:
+    name: medicasalaverry.com
+    driver: bridge
+  npm:
+    external: true
