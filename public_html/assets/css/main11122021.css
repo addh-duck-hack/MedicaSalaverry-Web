@@ -2611,6 +2611,7 @@ b.HStatus {
 }
 .ElemBotUI>li>a{
 	color: #002548;
+	font-size: 1.3em;
     text-decoration: none;
 }
 .ElemBotUI>li>a:hover{
